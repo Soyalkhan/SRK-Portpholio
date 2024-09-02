@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shahrukh Khan - 3D Artist & Modeler</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    <header class="hero">
-        <div class="container">
-            <h1 class="title">Shahrukh Khan</h1>
-            <p class="subtitle"><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-            <a href="#portfolio" class="btn btn-primary">Explore My Work</a>
+    <header class="header">
+        <div class="logo">
+            <!-- Animated Logo Images -->
+            <div class="logo-images">
+                <img src="images/blender.png" alt="Blender Logo" class="logo-img">
+                <img src="images/maya.jpg" alt="Maya Logo" class="logo-img">
+                <img src="images/photoshop.png" alt="Photoshop Logo" class="logo-img">
+                <img src="images/illustrator.png" alt="Illustrator Logo" class="logo-img">
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="menu-toggle" id="menuToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#resume" class="btn">Download Resume</a></li>
+                <li><a href="#academics">My Academics</a></li>
+            </ul>
+        </nav>
+        <div class="drawer" id="drawer">
+            <div class="drawer-close" id="drawerClose">&times;</div>
+            <ul class="drawer-links">
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#resume" class="btn">Download Resume</a></li>
+                <li><a href="#academics">My Academics</a></li>
+            </ul>
         </div>
     </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="title">Shahrukh Khan</h1>
+            <p class="subtitle">
+                <span class="typed-text"></span>
+                <span class="cursor">&nbsp;</span>
+            </p>
+            <a href="#portfolio" class="btn btn-primary">Explore My Work</a>
+        </div>
+    </section>
 
     <main>
         <section id="about" class="section about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>I’m Shahrukh Khan, a dedicated 3D artist and modeler with a passion for bringing ideas to life in three dimensions. With a keen eye for detail and a deep understanding of the art of modeling, I craft immersive and realistic 3D models for various industries, including games, films, and virtual reality.</p>
+                <p>I’m Shahrukh Khan, a dedicated 3D artist and modeler with a passion for bringing ideas to life in
+                    three dimensions. With a keen eye for detail and a deep understanding of the art of modeling, I
+                    craft immersive and realistic 3D models for various industries, including games, films, and virtual
+                    reality.</p>
             </div>
         </section>
 
@@ -107,13 +147,16 @@
         <div class="container">
             <p>&copy; 2024 Shahrukh Khan. All rights reserved.</p>
             <div class="social-links">
-                <a href="#" target="_blank"><img src="images/behance.png" style=" max-width: 30px;" alt="behance"></a>
-                <a href="#" target="_blank"><img src="images/instagram.png"  style=" max-width: 30px;" alt="instagram"></a>
-                <a href="#" target="_blank"><img src="images/linkedin.png" style=" max-width: 30px;" alt="linkedin"></a>
+                <a href="https://www.behance.net/" target="_blank"><img src="images/behance.png" style=" max-width: 30px;" alt="behance"></a>
+                <a href="https://www.instagram.com/Officeal_srk_4/?hl=en" target="_blank"><img src="images/instagram.png" style=" max-width: 30px;"
+                        alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/shahrukh-shahrukh-683a5527b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><img src="images/linkedin.png" style=" max-width: 30px;" alt="linkedin"></a>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

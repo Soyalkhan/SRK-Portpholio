@@ -28,3 +28,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     type();
 });
+
+
+// script.js
+// script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const drawer = document.getElementById('drawer');
+    const drawerClose = document.getElementById('drawerClose');
+
+    menuToggle.addEventListener('click', function() {
+        drawer.classList.add('active');
+    });
+
+    drawerClose.addEventListener('click', function() {
+        drawer.classList.remove('active');
+    });
+
+    // Close the drawer when clicking outside of it
+    document.addEventListener('click', function(event) {
+        if (!drawer.contains(event.target) && !menuToggle.contains(event.target)) {
+            drawer.classList.remove('active');
+        }
+    });
+});
