@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const textArray = ["3D Artist", "3D Modeler", "Creative Visionary"];
+    const textArray = ["3D Artist", "3D Modeler", "Creative Visionary", "Architecture Designer"];
     let textIndex = 0;
     let charIndex = 0;
     const typedTextSpan = document.querySelector(".typed-text");
