@@ -53,3 +53,53 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+// for contact page 
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    const submitButton = form.querySelector('button');
+    const formMessage = document.getElementById('formMessage');
+    
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        // Show spinner and disable button
+        submitButton.innerHTML = 'Submitting... <div class="spinner"></div>';
+        submitButton.disabled = true;
+        
+        // Extract form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        // Send email using EmailJS
+        emailjs.send('service_o2m4ugq', 'template_tw8zwya', {
+            from_name: name,
+            from_email: email,
+            message: message
+        })
+        .then(function (response) {
+            // Success: Show success message
+            formMessage.textContent = 'Message sent successfully!';
+            formMessage.classList.add('success');
+            formMessage.classList.remove('error');
+            formMessage.style.display = 'block';
+        }, function (error) {
+            // Failed: Show error message
+            formMessage.textContent = 'Failed to send message. Please try again.';
+            formMessage.classList.add('error');
+            formMessage.classList.remove('success');
+            formMessage.style.display = 'block';
+        })
+        .finally(function () {
+            // Reset button and form
+            submitButton.innerHTML = 'Submit';
+            submitButton.disabled = false;
+            form.reset();
+        });
+    });
+});
