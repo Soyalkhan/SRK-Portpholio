@@ -1,3 +1,4 @@
+// for change on name animation
 document.addEventListener("DOMContentLoaded", function() {
     const textArray = ["3D Artist", "3D Modeler", "Creative Visionary", "Architecture Designer"];
     let textIndex = 0;
@@ -29,10 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     type();
 });
 
-
-// script.js
-// script.js
-
+// fo drawer
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menuToggle');
     const drawer = document.getElementById('drawer');
